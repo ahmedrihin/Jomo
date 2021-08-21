@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.barlow{
+    font-family: 'Barlow', sans-serif;
+}
+.green{
+    color: #03de1c;
+}
+
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../image/slider.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+section{
+    padding: 4rem 0;
+}
+/* Nav bar */
+.nav-link{
+    padding: 1rem 1.2rem !important;
+    color: #fff !important;
+    transition: all 0.5s ease;
+}
+.nav-link:hover{
+    background-color: #03de1c;
+}
+.login{
+    font-size: 1.2rem;
+}
+.login:hover{
+    text-decoration: none;
+}
+.booking-btn{
+    background-color: #03de1c;
+    color: #fff;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sticky{
+    width: 100%;
+    z-index: 10;
+    background-color: #343a40;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Find your car Section */
+.selection{
+    padding: 2rem 3rem;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0px 0px 10px 3px rgb(236 236 236);
+}
+.selection input{
+    border: 1px solid rgb(201, 201, 201);
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+.selection select{
+    padding: 0.5rem 1rem;
+    width: 25%;
+    outline: none;
+    border: 1px solid rgb(201, 201, 201);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Our Cars */
+.heading-line{
+    position: relative;
+    width: fit-content;
+}
+.heading-line::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 999px;
+    background-color: #03de1c;
+    top: 50%;
+    left: 180px;
+}
+#our-cars .row img{
+    width: 80%;
+}
+#our-cars .row .first-car{
+    border-right: 2px dotted #a5a5a5;
+    border-bottom: 2px dotted #a5a5a5;
+}
+#our-cars .row .second-car{
+    border-bottom: 2px dotted #a5a5a5;
+}
+#our-cars .row .third-car{
+    border-right: 2px dotted #a5a5a5;
+}
+
+/* About Showroom Section */
+#about{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../image/about-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#about .line-white{
+    height: 2px;
+    width: 60%;
+    background-color: black;
+}
+.heading-line-about{
+    position: relative;
+    width: fit-content;
+}
+.heading-line-about::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 999px;
+    background-color: #fff;
+    top: 50%;
+    left: 350px;
+}
+
+/* Feature cars section */
+.heading-line-featured{
+    position: relative;
+    width: fit-content;
+}
+
+.heading-line-featured::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 999px;
+    background-color: #03de1c;
+    top: 50%;
+    left: 220px;
+}
+.col-12{
+    overflow: hidden;
+}
+#featured-cars .row .card-deck .card{
+    position: relative;
+    border: none;
+}
+#featured-cars .row .card-deck .card .card-price-box{
+    width: 120px;
+    background-color: #03de1c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+#featured-cars .row .card-deck .card .card-img-top{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+}
+#featured-cars .row .card-deck .card .top-counting-number{
+    font-weight: bolder;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    z-index: 2;
+}
+#featured-cars .row .card-deck .card .card-price-box-1{
+    width: 120px;
+    padding: 0.3rem 1rem 0.7rem 1rem;
+    background-color: #fff;
+}
+#featured-cars .row .card-deck .card .green-bg-card{
+    background-color: #03de1c;
+    position: relative;
+    height: 260px;
+}
+#featured-cars .row .card-deck .card .card-price-box hr{
+    height: 2px;
+    background-color: #fff;
+}
+#featured-cars .row .card-deck .card .card-price-box-1 hr{
+    height: 2px;
+    background-color: #212529;
+}
+
+/* Number Section */
+#number{
+    background-image: url('../image/number-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#number .container .row i{
+    font-size: 2rem;
+}
+#number .container .row h6{
+    font-weight: bolder;
+    color: #03de1c;
+}
+
+/* Client Section */
+#client .container .heading-line-client{
+    position: relative;
+    width: fit-content;
+}
+.heading-line-client::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 999px;
+    background-color: #03de1c;
+    top: 50%;
+    left: 420px;
+}
+#client .container .client-img img{
+    height: 100px;
+    border-radius: 50%;
+}
+#client .container .row .col-5>p{
+    border: 1px solid #010a14;
+}
+
+.slick-dots{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin-right: 0.5rem;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(3,222,28,0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots li.slick-active{
+    background-color: rgba(3,222,28,1);
+    
+}
+.slick-dots li button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+   
+}
+/* Contact Section */
+
+#contact .container .heading-line-contact{
+    position: relative;
+    width: fit-content;
+}
+.heading-line-contact::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 999px;
+    background-color: #03de1c;
+    top: 50%;
+    left: 220px;
+}
+#contact .container .row form input,textarea{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #343a40;
+}
+
+/* Footer */
+#footer{
+    padding: 8rem 0;
+    background-color: #010a14;
+    position: relative;
+}
+#footer .container .row button{
+    background-color: #03de1c;
+    color: #fff;
+    font-size: 1.1rem;
+}
+#footer .footer-contact{
+    background-color: #03de1c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .footer-contact div.footer-line{
+    height: 30px;
+    width: 2px;
+    background-color: #fff;
+}
+#footer .footer-contact a{
+    text-decoration: none;
+    color: #fff;
+}
+#footer .footer-contact .social-links a{
+    margin-right: 1rem;
+}
+#footer .copyright-line{
+    background-color: #fff;
+    height: 2px;
+    width: 50%;
+    margin: auto;
+}
+
